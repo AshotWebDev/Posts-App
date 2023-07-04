@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import NavBar from '../components/NavBar/NavBar'
-import { Outlet } from 'react-router-dom'
+import { Outlet, useNavigate } from 'react-router-dom'
 
-function HomeWraper() {
+function HomeWraper({currentUser, setCurrentUser}) {
+  const  navigate = useNavigate()
+  useEffect(()=>{
+    if(!currentUser){
+      navigate('/auth/login')
+    }
+  },[currentUser])
   return (
     <div>
-        <NavBar/>
+        <NavBar {...{setCurrentUser}}/>
         <Outlet/>
     </div>
   )

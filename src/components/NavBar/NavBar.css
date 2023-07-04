@@ -1,31 +1,15 @@
 
 nav{
-    background-color: brown;
-    box-shadow: 0 10px 10px rgb(188, 143, 143);
+    background-color: white;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.548);
     position: sticky;
     top: 0;
     z-index: 99;
 }
-.container{
+nav >.container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 70px;
-    max-width: 1140px;
-    margin: 0 auto;
 }
 
-
-Nav .container .nav-menu{
-    display: flex;
-    column-gap: 70px;
-    font-size: 20px;
-    padding-inline-start: 0;
-}
-
-Nav .container .nav-menu  a {
-    text-decoration: none;
-    font-family: monospace;
-    color: rgb(122, 99, 99);
-    padding: 2px;
-}

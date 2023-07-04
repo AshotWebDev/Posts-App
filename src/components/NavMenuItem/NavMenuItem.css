@@ -1,0 +1,10 @@
+.nav-menu  a {
+    text-decoration: none;
+    font-family: monospace;
+    color: black;
+    padding: 2px;
+}
+
+.nav-menu a.active-item{
+    color: #D85C34;
+}

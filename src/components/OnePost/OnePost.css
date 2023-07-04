@@ -1,0 +1,37 @@
+.one-post{
+    width: 700px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    font-family: monospace;
+}
+
+.one-post span{
+    color: gray;
+}
+.one-post h2{
+    font-size: 20px;
+    color: black;
+}
+.one-post p{
+    color: gray;
+    font-size: 14px;
+}
+
+.btns-div button{
+    background-color: #D85C34;
+    border: none;
+    margin: 0 10px;
+    color: white;
+    width: 70px;
+    height: 20px;
+}
+
+.btns-div button:hover{
+    box-shadow: 0 0 15px black;
+}
+
+.full-info{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,18 @@
+.nav-menu{
+    display: flex;
+    column-gap: 70px;
+    font-size: 20px;
+    padding-inline-start: 0;
+}
+
+.nav-menu  button{
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.nav-menu  button:hover{
+    box-shadow: 0 0  18px rgba(0, 0, 0, 0.808);
+}

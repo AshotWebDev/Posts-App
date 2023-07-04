@@ -1,12 +1,12 @@
 import React from 'react'
 import NavMenu from '../NavMenu/NavMenu'
 import './NavBar.css'
-function NavBar() {
+function NavBar({ setCurrentUser}) {
   return (
     <nav>
         <div className='container'>
-            {/* <img src={} alt="" /> */}
-            <NavMenu/>
+            <h1>Personally</h1>
+            <NavMenu {...{ setCurrentUser}}/>
         </div>
     </nav>
   )

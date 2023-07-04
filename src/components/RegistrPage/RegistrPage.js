@@ -1,8 +1,10 @@
 import { Formik } from 'formik'
 import React from 'react'
 import * as yup from 'yup';
+import customAxios from '../../axios';
+import { useNavigate } from 'react-router-dom';
 function RegistrPage() {
-    
+    const navigate = useNavigate()
     const  validationSchema = yup.object().shape({
         name: yup.string().required('Պարտադիր գրել անուն'),
         lastName: yup.string().required('Պարտադիր գրել ազգանուն'),
@@ -28,8 +30,14 @@ function RegistrPage() {
                 confirmPassword: '',
             }}
 
-            onSubmit={(values, {resetForm})=>{
-                
+            onSubmit={async (values, {resetForm})=>{
+                try {
+                    const res = await customAxios.post('/users', values)
+                    navigate('/auth/login')
+                    resetForm()
+                } catch (error) {
+                    console.log(error);
+                }
             }}
 
             validateOnBlur

@@ -1,0 +1,23 @@
+header{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+header .container{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .container  h2{
+    color: #D85C34;
+    font-family: monospace;
+    font-size: 40px;
+}
+
+header .container p{
+    color: gray;
+    font-family: monospace;
+    font-size: 20px;
+}
