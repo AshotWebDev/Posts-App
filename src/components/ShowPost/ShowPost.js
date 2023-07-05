@@ -2,13 +2,19 @@ import React, { useEffect, useState } from 'react'
 import customAxios from '../../axios'
 import { useParams } from 'react-router-dom'
 import './ShowPost.css'
+import AddComment from '../AddComment/AddComment'
 function ShowPost({currentUser}) {
   const [currentPost, setCurrentPost] = useState(null)
+  const [comments, setComments] = useState([])
   const {id} = useParams()
   useEffect(()=>{
     customAxios.get('/posts?id=' + id)
                 .then(({data})=>{
                     setCurrentPost({...data.at(0)})
+                })
+    customAxios.get('/comments?postId=' + currentPost?.id)
+                .then(({data})=>{
+                    setComments([...data])
                 })
   },[])
   return (
@@ -21,7 +27,12 @@ function ShowPost({currentUser}) {
                 </div>
                 <img width={150} height={150} src={currentPost?.img} alt="" />
             </div>
-
+              {
+                comments.map(comment =>
+                    <h3 key={comment.id}>{comment.author}-{comment.body}</h3>
+                  )
+              }
+            <AddComment {...{currentPost}}/>
     </div>
   )
 }

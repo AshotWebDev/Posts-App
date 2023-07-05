@@ -59,7 +59,110 @@
       "id": 3
     }
   ],
-  "comments": [],
+  "comments": [
+    {
+      "postId": 1,
+      "author": "Armen",
+      "body": "bbgnbn",
+      "id": 1
+    },
+    {
+      "postId": 1,
+      "author": "Armen",
+      "body": "tuynaaa",
+      "id": 2
+    },
+    {
+      "postId": 1,
+      "author": "Armen",
+      "body": "tuynaaa",
+      "id": 3
+    },
+    {
+      "postId": 1,
+      "author": "Armen",
+      "body": "tuynaaa",
+      "id": 4
+    },
+    {
+      "postId": 1,
+      "author": "Armen",
+      "body": "tuynaaa",
+      "id": 5
+    },
+    {
+      "postId": 1,
+      "author": "Armen",
+      "body": "tuynaaa",
+      "id": 6
+    },
+    {
+      "postId": 1,
+      "author": "Armen",
+      "body": "hvh",
+      "id": 7
+    },
+    {
+      "postId": 1,
+      "author": "Armen",
+      "body": "hvh",
+      "id": 8
+    },
+    {
+      "postId": 1,
+      "author": "Armen",
+      "body": "hvh",
+      "id": 9
+    },
+    {
+      "postId": 1,
+      "author": "Armen",
+      "body": "hvh",
+      "id": 10
+    },
+    {
+      "postId": 1,
+      "author": "Armen",
+      "body": "hvh",
+      "id": 11
+    },
+    {
+      "postId": 1,
+      "author": "Armen",
+      "body": "hvh",
+      "id": 12
+    },
+    {
+      "postId": 1,
+      "author": "Armen",
+      "body": "hvh",
+      "id": 13
+    },
+    {
+      "postId": 1,
+      "author": "Armen",
+      "body": "hvh",
+      "id": 14
+    },
+    {
+      "postId": 1,
+      "author": "Armen",
+      "body": "hvh",
+      "id": 15
+    },
+    {
+      "postId": 1,
+      "author": "Armen",
+      "body": "hvh",
+      "id": 16
+    },
+    {
+      "postId": 2,
+      "author": "Armen",
+      "body": "gh",
+      "id": 17
+    }
+  ],
   "profile": {
     "name": "typicode"
   }
