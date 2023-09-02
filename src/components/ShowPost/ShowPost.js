@@ -12,11 +12,14 @@ function ShowPost({currentUser}) {
                 .then(({data})=>{
                     setCurrentPost({...data.at(0)})
                 })
-    customAxios.get('/comments?postId=' + currentPost?.id)
-                .then(({data})=>{
-                    setComments([...data])
-                })
   },[])
+
+  useEffect(()=>{
+    customAxios.get('/comments?postId=' + currentPost?.id)
+    .then(({data})=>{
+        setComments([...data])
+    })
+  },[currentPost])
   return (
     <div className='unique-post container'>
             <div className='unique-postDiv'>
@@ -29,10 +32,10 @@ function ShowPost({currentUser}) {
             </div>
               {
                 comments.map(comment =>
-                    <h3 key={comment.id}>{comment.author}-{comment.body}</h3>
+                    <h3 className='com' key={comment.id}>{comment.author}-{comment.body}</h3>
                   )
               }
-            <AddComment {...{currentPost}}/>
+            <AddComment {...{currentPost, setComments, currentUser}}/>
     </div>
   )
 }
